@@ -4,6 +4,8 @@
 
 tar czvf backup$(date +%Y%m%d%H).tgz >> backupsLog
 
+git pull
+
 git add .
 
 git commit -am 'backed up files' 
