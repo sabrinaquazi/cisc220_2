@@ -16,6 +16,7 @@
 #- Drop any other incoming tcp traffic
 
 #- Block connecting from your computer to any IP outside the range 130.15.0.0 to 130.15.255.255 [netmask /16]
+# sudo iptables -A INPUT -s 130.15.0.0/16 -j DROP
 
 #- Only allow IP 130.15.100.100 to connect to your mysql running on port 3306
 # iptables -A INPUT -i eth0 -p tcp -s 130.15.100.100 --dport 3306 -m state --state NEW,ESTABLISHED -j ACCEPT
