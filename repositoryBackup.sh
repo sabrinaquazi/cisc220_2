@@ -4,6 +4,8 @@
 
 tar czvf backup$(date +%Y%m%d%H).tgz >> backupsLog
 
+git add .
+
 git commit -am 'backed up files' 
 
 git push https://$3:$4@$2 --all
