@@ -8,7 +8,7 @@ git add .
 
 git commit -am 'backed up files' 
 
-git push https://$3:$4@$2 --all
+git push https://$2:$3@$1 --all
 
 echo $ "Backup backup$(date +%Y%m%d%H).tgz created sucessfully!"
 echo $ "Backup backup$(date +%Y%m%d%H).tgz committed to the local git repository"
