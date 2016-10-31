@@ -2,8 +2,13 @@
 # sudo iptables –D INPUT 1
 
 #- Enable ssh only from computers in the range 130.15.0.0 to 130.15.255.255 [netmask /16]
+# sudo iptables -A INPUT -i eth0 -p tcp -s 130.15.0.0/16 --dport 22 -m state --state NEW,ESTABLISHED -j ACCEPT
+# sudo iptables -A OUTPUT -o eth0 -p tcp --sport 22 -m state --state ESTABLISHED -j ACCEPT
 
 #- Enable ssh from computers in any private network
+# sudo iptables -A INPUT -p tcp --dport 22 -s 192.168.0.0/24 -j ACCEPT
+# sudo iptables -A INPUT -p tcp --dport 22 -s 127.0.0.0/8 -j ACCEPT
+# sudo iptables -A INPUT -p tcp --dport 22 -j DROP
 
 #- Enable http and https from any IP
 # http:
