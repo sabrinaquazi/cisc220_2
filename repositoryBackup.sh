@@ -1,7 +1,7 @@
 #!/bin/bash
 #*1**1-7
 
-tar czvf backup$(date +%Y%m%d%H).tgz --exclude '*.tgz' 
+tar czvf backup$(date +%Y%m%d%H).tgz --exclude '*.tgz' cisc220_2/
 
 git pull
 
