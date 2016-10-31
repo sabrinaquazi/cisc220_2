@@ -1,12 +1,12 @@
 #!/bin/bash
-#*1**1,2,3,4,5,6,7
+#*1**1-7
 
-tar czvf backup2016102309.tgz 
+
+tar czvf backup$(date +%Y%m%d%H).tgz
+
 
 git push https://$3:$4@$2 --all
 
-echo $ "Backup backupYYYYMMDDHH.tgz created sucessfully!"
-echo $ "Backup backupYYYYMMDDHH.tgz committed to the local git repository"
-echo $ "Backup backupYYYYMMDDHH.tgz pushed to the remote git repository cisc220_2"
-
-
+echo $ "Backup backup$(date +%Y%m%d%H).tgz created sucessfully!"
+echo $ "Backup backup$(date +%Y%m%d%H).tgz committed to the local git repository"
+echo $ "Backup backup$(date +%Y%m%d%H).tgz pushed to the remote git repository cisc220_2"
