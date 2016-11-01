@@ -1,3 +1,5 @@
+# 10107233 - Nicole Fitzgerald (ninkle) 10183626 - Raasil Khan (Raasil) 10161819 - Stefan Sokic (StefanSokic) 10102143 - Sabrina Quazi (sabrinaquazi)
+
 #!/bin/bash
 # print the header
 echo -e 'IP Address' '\t' 'Sub-Domain';

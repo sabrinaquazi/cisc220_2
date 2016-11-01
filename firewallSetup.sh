@@ -1,3 +1,5 @@
+# 10107233 - Nicole Fitzgerald (ninkle) 10183626 - Raasil Khan (Raasil) 10161819 - Stefan Sokic (StefanSokic) 10102143 - Sabrina Quazi (sabrinaquazi)
+
 #- Delete any previous rules in the INPUT, FORWARD and OUTPUT tables
 # sudo iptables –D INPUT 1
 
