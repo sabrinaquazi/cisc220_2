@@ -2,7 +2,7 @@
 #*1**1-7
 #10107233 - Nicole Fitzgerald (ninkle) 10183626 - Raasil Khan (Raasil) 10161819 - Stefan Sokic (StefanSokic) 10102143 - Sabrina Quazi (sabrinaquazi)
 
-tar czvf backup$(date +%Y%m%d%H).tgz --exclude '*.tgz' $1
+tar czvf backup$(date +%Y%m%d%H).tgz --exclude '*.tgz' $1 
 
 git pull
 
