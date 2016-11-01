@@ -4,8 +4,6 @@
 
 tar czvf backup$(date +%Y%m%d%H).tgz --exclude '*.tgz' $1 
 
-git pull
-
 git add .
 
 git commit -am 'backed up files' 
